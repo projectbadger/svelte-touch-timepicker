@@ -1,27 +1,24 @@
 # Native like date-picker for Svelte (With wheel control for desktop)
 
 <p>
-  <a href="https://www.npmjs.com/package/svelte-touch-datepicker"><img  src="https://img.shields.io/npm/v/svelte-touch-datepicker?style=for-the-badge"/></a>
-  <a href="https://www.npmjs.com/package/svelte-touch-datepicker">
-    <img src="https://img.shields.io/npm/dm/svelte-touch-datepicker?style=for-the-badge"/>
+  <a href="https://www.npmjs.com/package/svelte-touch-datepicker"><img  src="https://img.shields.io/npm/v/@badgeradmin/svelte-touch-timepicker?style=for-the-badge"/></a>
+  <a href="https://www.npmjs.com/package/@badgeradmin/svelte-touch-timepicker">
+    <img src="https://img.shields.io/npm/dm/@badgeradmin/svelte-touch-timepicker?style=for-the-badge"/>
   </a>
   <a href="https://svelte.dev"><img  src="https://img.shields.io/badge/svelte-v3-blueviolet?style=for-the-badge"/></a>
 </p>
 
-
-## 🚀[See it in Action](https://sharifclick.github.io/svelte-touch-datepicker/)
-
 ## Installation
 
 ```bash
-npm i -D svelte-touch-datepicker
+npm i -D @projectbadger/svelte-touch-timepicker
 ```
 
 ## Usage
 
 ```html
 <script>
-  import DatePicker  from "svelte-touch-datepicker";
+  import {DatePicker}  from "@badgeradmin/svelte-touch-timepicker";
 
   let date = new Date();
   $: _date = date.toLocaleDateString("en-US");
