@@ -6,6 +6,7 @@
   export let visible = false;
   export let years_map = [1900, 2100];
   export let classes = '';
+  export let locale = 'en-US';
 
   let years_count = ((years_map[1] - years_map[0]) + 1);
 
@@ -16,7 +17,7 @@
 
   let _date, popup;
   $: DAYS = new Array( new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate() ).fill(1).map((v, i) => v + i);
-  $:  _date = date.toLocaleDateString("en-US");
+  $:  _date = date.toLocaleDateString(locale);
 
 
 

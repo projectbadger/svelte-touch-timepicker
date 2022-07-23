@@ -6,6 +6,7 @@
   export let visible = false;
   export let classes = '';
   export let display24 = false;
+  export let locale = 'en-US';
 
   const HOURS = new Array(display24?24:12).fill(0).map((v, i) => v + i);
   const MINUTES = new Array(60).fill(0).map((v, i) => v + i);
@@ -13,7 +14,7 @@
   const dispatch = createEventDispatcher();
 
   let _date, popup;
-  $:  _date = date.toLocaleDateString("en-US");
+  $:  _date = date.toLocaleTimeString(locale);
 
 
 

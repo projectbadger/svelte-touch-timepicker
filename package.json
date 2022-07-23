@@ -1,6 +1,6 @@
 {
   "name": "@badgeradmin/svelte-touch-timepicker",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
