@@ -1,2 +1,6 @@
 import DatePicker from './DatePicker.svelte'
-export default DatePicker ;
+import TimePicker from './TimePicker.svelte'
+export {
+    DatePicker,
+    TimePicker
+} ;

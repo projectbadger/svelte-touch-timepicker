@@ -1,25 +1,23 @@
 {
-  "name": "svelte-touch-datepicker",
+  "name": "svelte-touch-timepicker",
   "version": "1.4.1",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
-  "description": "Native like touch datepicker for Svelte",
-  "homepage": "https://github.com/SharifClick/svelte-touch-datepicker",
+  "description": "Native like touch timepicker for Svelte",
+  "homepage": "https://github.com/projectbadger/svelte-touch-timepicker",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SharifClick/svelte-touch-datepicker"
+    "url": "https://github.com/projectbadger/svelte-touch-timepicker"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "bugs": {
-    "url": "https://github.com/SharifClick/svelte-touch-datepicker/issues"
+    "url": "https://github.com/projectbadger/svelte-touch-timepicker/issues"
   },
   "author": {
-    "name": "Sharif Ahmed",
-    "email": "me.sharifahmed@gmail.com",
-    "url": "http://sharifahmed.me"
+    "name": "projectbadger"
   },
   "license": "MIT",
   "devDependencies": {
