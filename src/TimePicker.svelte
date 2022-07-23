@@ -13,7 +13,6 @@
   const dispatch = createEventDispatcher();
 
   let _date, popup;
-  $: DAYS = new Array( new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate() ).fill(1).map((v, i) => v + i);
   $:  _date = date.toLocaleDateString("en-US");
 
 
@@ -24,7 +23,6 @@
   }
 
   let dateChanged = (event) => {
-    console.log("changed data:", event.detail)
     let {type, changedData} = event.detail;
     let newDate = new Date(date.getFullYear(), date.getMonth(), date.getDate(), date.getHours(), date.getMinutes(), date.getSeconds());
     switch(type) {
@@ -60,11 +58,6 @@
 
   function clickedOutside(event){
     if(event.target == popup){
-    // If the click target contains popup,
-    // the click has been made outside.
-    console.log("click event:", event);
-    // if(event.target.querySelector('.touch-date-popup')) {
-      console.log("setting visibility to false")
       visible = false
     }
   }
