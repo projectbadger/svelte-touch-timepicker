@@ -7,6 +7,7 @@
   export let years_map = [1900, 2100];
   export let classes = '';
   export let locale = 'en-US';
+  export let preserveTime = true;
 
   let years_count = ((years_map[1] - years_map[0]) + 1);
 
@@ -42,6 +43,11 @@
       let day = Math.min(date.getDate(), maxDayInSelectedMonth)
       newDate = new Date(1900 + changedData, date.getMonth(), day, date.getHours(), date.getMinutes(), date.getSeconds())
 
+    }
+    if(preserveTime) {
+      newDate.setHours(date.getHours());
+      newDate.setMinutes(date.getMinutes());
+      newDate.setSeconds(date.getSeconds());
     }
 
     date = newDate;
