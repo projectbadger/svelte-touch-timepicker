@@ -1,9 +1,10 @@
 {
-  "name": "svelte-touch-timepicker",
-  "version": "1.4.4",
+  "name": "@badgeradmin/svelte-touch-timepicker",
+  "version": "1.4.5",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
+  "type": "module",
   "description": "Native like touch timepicker for Svelte",
   "homepage": "https://github.com/projectbadger/svelte-touch-timepicker",
   "repository": {
@@ -17,7 +18,7 @@
     "url": "https://github.com/projectbadger/svelte-touch-timepicker/issues"
   },
   "author": {
-    "name": "projectbadger"
+    "name": "badgeradmin"
   },
   "license": "MIT",
   "devDependencies": {
@@ -43,10 +44,10 @@
     "svelte",
     "svelte.js",
     "sveltejs",
-    "svelte-touch-datepicker",
-    "touch-datepicker",
-    "datepicker",
-    "native-datepicker",
-    "date-picker"
+    "svelte-touch-timepicker",
+    "touch-timepicker",
+    "timepicker",
+    "native-timepicker",
+    "time-picker"
   ]
 }
